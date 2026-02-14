@@ -21,15 +21,20 @@
         .mint-gradient {
             background: linear-gradient(135deg, #A7F3D0 0%, #34D399 100%);
         }
-        /* Estilo para evitar flicker durante o carregamento do React */
         #root:empty {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: white;
+            color: #0f172a;
+            font-weight: 500;
         }
     </style>
+<script>
+    // Polyfill básico para process.env para evitar quebras no navegador
+    window.process = window.process || { env: { NODE_ENV: 'production' } };
+</script>
 <script type="importmap">
 {
   "imports": {
@@ -37,14 +42,14 @@
     "react/": "https://esm.sh/react@19.2.4/",
     "react-dom": "https://esm.sh/react-dom@19.2.4",
     "react-dom/": "https://esm.sh/react-dom@19.2.4/",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
     "@google/genai": "https://esm.sh/@google/genai@1.38.0"
   }
 }
 </script>
 </head>
 <body class="bg-white text-slate-900">
-    <div id="root"></div>
-    <!-- Ponto de entrada crucial para o carregamento da aplicação -->
+    <div id="root">Carregando Azure & Mint...</div>
     <script type="module" src="index.tsx"></script>
 </body>
 </html>

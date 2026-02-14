@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { WATCHES } from '../constants';
-import ProductCard from './ProductCard';
-import { Product } from '../types';
+import { WATCHES } from '../constants.tsx';
+import ProductCard from './ProductCard.tsx';
+import { Product } from '../types.ts';
 
 interface ProductGridProps {
   onAddToCart: (p: Product) => void;
@@ -23,7 +23,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ onAddToCart }) => {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold text-slate-900">O Catálogo</h2>
             <p className="text-slate-500 max-w-lg">
-              Explore nossos cronógrafos feitos à mão, cada um equilibrado com nossa paleta de cores exclusiva de Menta e Azure.
+              Explore nossos cronógrafos feitos à mão, equilibrados com nossa paleta Azure & Mint.
             </p>
           </div>
           
@@ -52,12 +52,6 @@ const ProductGrid: React.FC<ProductGridProps> = ({ onAddToCart }) => {
               onAddToCart={onAddToCart}
             />
           ))}
-        </div>
-
-        <div className="mt-16 text-center">
-            <button className="px-10 py-4 border-2 border-slate-900 text-slate-900 font-bold rounded-full hover:bg-slate-900 hover:text-white transition-all">
-                Carregar Mais Peças
-            </button>
         </div>
       </div>
     </section>
