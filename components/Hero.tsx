@@ -25,9 +25,12 @@ const Hero: React.FC = () => {
             >
               Comprar Coleção
             </a>
-            <button className="px-8 py-4 bg-white border border-slate-200 hover:border-slate-900 text-slate-900 font-bold rounded-full transition-all">
-              Ver Filme
-            </button>
+            <a 
+              href="#about"
+              className="px-8 py-4 bg-white border border-slate-200 hover:border-slate-900 text-slate-900 font-bold rounded-full transition-all inline-block text-center"
+            >
+              Conhecer a Marca
+            </a>
           </div>
           
           <div className="flex items-center justify-center lg:justify-start gap-8 pt-4">
