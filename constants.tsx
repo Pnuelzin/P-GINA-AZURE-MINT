@@ -44,7 +44,7 @@ export const WATCHES: Product[] = [
     price: 950,
     category: 'Premium',
     description: 'Uma estética nítida e fria para o profissional moderno.',
-    image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&q=80&w=800',
     color: 'Light Blue'
   },
   {
